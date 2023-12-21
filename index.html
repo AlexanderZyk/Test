@@ -4,74 +4,87 @@
 <head>
     <meta charset="UTF-8">
     <title>Sanchess</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <img src="man.png" alt="NOT IMAGE" width="200">
-    <h1>Александр Зык</h1>
-    <p>Я бедный студент</p>
-    <p><em>Люблю <strong>деньги</strong>, поэтому учусь программировать</em></p>
+    <div class="container">
+        <div class="info">
+            <img src="myphoto.jpg" alt="NOT IMAGE" class="avatar">
+            <div class="info-text">
+                <h1>Александр Зык</h1>
+                <p>Я бедный студент, поэтому учусь программировать</p>
+                <h4>Мои социальные сети:</h4>
+                <a href="https://vk.com/sasha_zyk" target="_blank"><strong>VK</strong></a>
+                |
+                <a href="https://vk.com/sasha_zyk" target="_blank"><strong>NOT VK</strong></a>
+                |
+                <a href="https://vk.com/sasha_zyk" target="_blank"><strong>NOT NOT VK</strong></a>
+            </div>
+        </div>
 
-    <hr>
+        <div class="card bg-yellow">
+            <h2>Мои хобби:</h2>
+            <ol class="list">
+                <li>Программировать</li>
+                <li>Играть в доту</li>
+                <li>Кушать</li>
+                <li>DROCHIT'</li>
+            </ol>
+            </div>
 
-    <h2>Мои социальные сети:</h2>
-    <ul>
-        <li><a href="https://vk.com/sasha_zyk" target="_blank"><strong>VK</strong></a></li>
-        <li><a href="https://vk.com/sasha_zyk" target="_blank"><strong>NOT VK</strong></a></li>
-        <li><a href="https://vk.com/sasha_zyk" target="_blank"><strong>NOT NOT VK</strong></a></li>
-    </ul>
+            <div class="card bg-green">
+            <h2>Приватные видео с моим участием:</h2>
+            <a href="video.html">Посмотреть (не советую)</a>
+        </div>
 
-    <hr>
+        <div class="card bg-red">
+            <h2>Просто таблица:</h2>
+            <table class="table">
+                <tr>
+                    <th>№1</th>
+                    <th>№2</th>
+                    <th>№3</th>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>234</td>
+                    <td>345</td>
+                </tr>
+                <tr>
+                    <td>456</td>
+                    <td>567</td>
+                    <td>678</td>
+                </tr>
+            </table>
+        </div>
 
-    <h2>Мои хобби:</h2>
-    <ol>
-        <li>Программировать</li>
-        <li>Играть в доту</li>
-        <li>Кушать</li>
-        <li>DROCHIT'</li>
-    </ol>
-
-    <hr>
-
-    <h2>Приватные видео с моим участием:</h2>
-    <a href="video.html">Посмотреть (не советую)</a>
-
-    <hr>
-
-    <h2>Просто таблица:</h2>
-    <table border="1">
-        <tr>
-            <th>№1</th>
-            <th>№2</th>
-            <th>№3</th>
-        </tr>
-        <tr>
-            <td>123</td>
-            <td>234</td>
-            <td>345</td>
-        </tr>
-        <tr>
-            <td>456</td>
-            <td>567</td>
-            <td>678</td>
-        </tr>
-    </table>
-
-    <hr>
-
-    <h2>Связаться со мной</h2>
-    <form action="/">
-        <label for="name">Ваше имя:</label>
-        <input type="text" id="name" placeholder="введите имя...">
-        <br>
-        <label for="email">Email:</label>
-        <input type="text" id="email" placeholder="введите email...">
-        <br>
-        <label for="textArea">Ваше сообщение:</label>
-        <br>
-        <textarea id="textArea"></textarea>
-        <br>
-        <input type="submit" value="Связаться!">
-    </form>
-    <hr>
+        <div class="contact">
+            <h2>Связаться со мной</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" id="name" placeholder="введите имя...">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="text" id="email" placeholder="введите email...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="textArea">Ваше сообщение:</label>
+                    <textarea id="textArea"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Связаться!">
+            </form>
+        </div>
+        <!-- <div class="box-model">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div style="margin-bottom: 500px;"></div> -->
+    </div>
 </body>
 </html>
